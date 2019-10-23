@@ -1,0 +1,58 @@
+Oct-23 10:11:09.084 [main] DEBUG nextflow.cli.Launcher - $> nextflow run hello
+Oct-23 10:11:09.297 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.10.0
+Oct-23 10:11:09.404 [main] DEBUG nextflow.scm.AssetManager - Listing projects in folder: /Users/tetsu/.nextflow/assets
+Oct-23 10:11:09.423 [main] INFO  nextflow.cli.CmdRun - Pulling nextflow-io/hello ...
+Oct-23 10:11:09.424 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/nextflow-io/hello/contents/nextflow.config
+Oct-23 10:11:11.714 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/nextflow-io/hello/contents/main.nf
+Oct-23 10:11:11.939 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/nextflow-io/hello
+Oct-23 10:11:12.109 [main] DEBUG nextflow.scm.AssetManager - Pulling nextflow-io/hello -- Using remote clone url: https://github.com/nextflow-io/hello.git
+Oct-23 10:11:14.359 [main] INFO  nextflow.cli.CmdRun -  downloaded from https://github.com/nextflow-io/hello.git
+Oct-23 10:11:14.421 [main] DEBUG nextflow.scm.AssetManager - Git config: /Users/tetsu/.nextflow/assets/nextflow-io/hello/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/hello.git
+Oct-23 10:11:14.421 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow-io/hello` [nauseous_sanger] - revision: a9012339ce [master]
+Oct-23 10:11:14.477 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /Users/tetsu/.nextflow/assets/nextflow-io/hello/nextflow.config
+Oct-23 10:11:14.478 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/tetsu/.nextflow/assets/nextflow-io/hello/nextflow.config
+Oct-23 10:11:14.488 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-23 10:11:14.649 [main] DEBUG nextflow.extension.OperatorEx - Dataflow extension methods: branch,buffer,chain,choice,collate,collect,collectFile,combine,concat,count,countBy,countFasta,countFastq,countLines,countText,cross,distinct,filter,first,flatMap,flatten,fork,groupBy,groupTuple,ifEmpty,into,join,last,map,max,mean,merge,min,mix,phase,print,println,randomSample,reduce,separate,set,splitCsv,splitFasta,splitFastq,splitText,spread,subscribe,sum,take,tap,toDouble,toFloat,toInteger,toList,toLong,toSortedList,transpose,unique,until,view
+Oct-23 10:11:14.656 [main] DEBUG nextflow.Session - Session uuid: c8293bf3-b40f-44c9-b464-1c8ab54d0f0b
+Oct-23 10:11:14.656 [main] DEBUG nextflow.Session - Run name: nauseous_sanger
+Oct-23 10:11:14.656 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-23 10:11:14.693 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 19.10.0 build 5170
+  Created: 21-10-2019 15:07 UTC (12:07 BRST)
+  System: Mac OS X 10.12.6
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 1.8.0_152-release-1056-b12
+  Encoding: UTF-8 (UTF-8)
+  Process: 1021@iMacB202-19.local [10.7.113.4]
+  CPUs: 4 - Mem: 8 GB (22.4 MB) - Swap: 0 (0)
+Oct-23 10:11:14.738 [main] DEBUG nextflow.Session - Work-dir: /Users/tetsu/BIF0010/2019.2/work [Mac OS X]
+Oct-23 10:11:14.739 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/tetsu/.nextflow/assets/nextflow-io/hello/bin
+Oct-23 10:11:14.826 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Oct-23 10:11:14.829 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-23 10:11:15.211 [main] DEBUG nextflow.Session - Session start invoked
+Oct-23 10:11:15.542 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-23 10:11:15.550 [main] WARN  nextflow.script.BaseScript - The use of `echo` method is deprecated
+Oct-23 10:11:15.771 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-23 10:11:15.772 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-23 10:11:15.776 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-23 10:11:15.806 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=8 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Oct-23 10:11:15.931 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > sayHello -- maxForks: 4
+Oct-23 10:11:15.979 [main] DEBUG nextflow.script.BaseScript - No entry workflow defined
+Oct-23 10:11:15.980 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-23 10:11:15.980 [main] DEBUG nextflow.Session - Session await
+Oct-23 10:11:16.195 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-23 10:11:16.223 [Task submitter] INFO  nextflow.Session - [d6/054193] Submitted process > sayHello (2)
+Oct-23 10:11:16.229 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-23 10:11:16.229 [Task submitter] INFO  nextflow.Session - [2a/06167a] Submitted process > sayHello (1)
+Oct-23 10:11:16.234 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-23 10:11:16.234 [Task submitter] INFO  nextflow.Session - [2c/8527e0] Submitted process > sayHello (4)
+Oct-23 10:11:16.240 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-23 10:11:16.240 [Task submitter] INFO  nextflow.Session - [51/81b4b1] Submitted process > sayHello (3)
+Oct-23 10:11:16.348 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sayHello (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/tetsu/BIF0010/2019.2/work/2a/06167ac66808c0f37aead543f3c08f]
+Oct-23 10:11:16.379 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: sayHello (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/tetsu/BIF0010/2019.2/work/2c/8527e05bdb0cba74f759e1d9d5e76c]
+Oct-23 10:11:16.381 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: sayHello (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/tetsu/BIF0010/2019.2/work/51/81b4b1fff1056cfde953e6fea7310e]
+Oct-23 10:11:16.444 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: sayHello (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/tetsu/BIF0010/2019.2/work/d6/0541936fc9e390525e09bfaf43c107]
+Oct-23 10:11:16.446 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-23 10:11:16.590 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-23 10:11:16.609 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=4; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=388ms; failedDuration=0ms; cachedDuration=0ms]
+Oct-23 10:11:16.805 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Oct-23 10:11:16.875 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
